@@ -13,8 +13,6 @@ export default function Bills({ gastos, ingresos, filtroFecha, calcularPromedio 
     <div className="bills-container">
       <h2>Gastos</h2>
       <p>-{calcularPromedio(gastosFiltrados)}</p>
-      <h2>Ingresos</h2>
-      <p>+{calcularPromedio(ingresosFiltrados)}</p>
     </div>
   );
 }
