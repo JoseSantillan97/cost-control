@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+.meses-container{
+  background-color: #6582f8;
+  color: #FFF;
+  display: flex;
+  flex-direction: row-reverse;
+  place-content: center;
+  gap: 2rem;
+  height: 50px;
+  border-radius: 0px 0px 15px 15px;
+}
+.mes-item{
+  display: flex;
+  font-size: .7rem;
+  place-self: center;
+  transition: .2s ease;
+  font-family: 'PT Sans', sans-serif;
+}
+.active{
+  font-size: 1.2rem;
+  /* place-self: center; */
+}
+
+.balance-title{
+  font-size: 1rem;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 1.1rem;
+}
+.balance-amount{
+  color: #6883ed;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.income-container{
+  color: #68cb73;
+}
+.bills-container{
+  color: #e76369;
+}
+.income-container h2, .bills-container h2{
+  font-size: .75rem;
+  margin-bottom: 0;
+}
+.income-container p, .bills-container p{
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.analytical{
+  font-size: .7rem;
+  color: #cecece;
+  margin: .5rem 0;
+}
+.unorderlist{
+  list-style-type: none;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  /* display: flex; */
+  font-weight: bold;
+  font-size: .8rem;
+  margin: .8rem 0 .5rem 0;
+}
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  box-shadow: 0px 5px 8px rgba(0,0,0,.07);
+  font-weight: 600;
+  margin: .4rem 0;
+}
+.flex-element{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  place-items: center;
+}
+.avatar{
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #cecece;
+  border-radius: 50%;
+}
+.number{
+  place-self: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.ingreso{
+  color: #92be91;
+}
+.gasto{
+  color: #c37474;
+}
+
+.input-container{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.input{
+  padding: 3px 5px;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+}
+.button{
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  background-color: #86a5ff;
+  border: none;
+  border-radius: 8px;
+  color: #FFF;
+  font-weight: 600;
+  padding: 10px;
+}
